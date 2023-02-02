@@ -1,0 +1,87 @@
+// Variables   
+/* (:[type] - specifies the type of the variable, it is optional) */
+var variable_str: String = "This is a String";
+var variable_char: Character = "P";
+var variable_flo: Float = -2.678;
+var variable_doub: Double = 25.67;
+var variable_boolean: Bool = true;
+
+print("This is a String - \(variable_str)");
+print("This is a Character - \(variable_char)");
+print("This is a Float - \(variable_flo)");
+print("This is a Double - \(variable_doub)");
+print("This is a Boolean - \(variable_boolean)");
+
+
+
+// Basic Arithmetic Operations 
+var a = 20;
+var b = 5;
+
+let sum = a + b
+let difference = a - b
+let product = a * b
+let quotient = a / b
+
+print("The sum of \(a) and \(b) is \(sum)");
+print("The difference between \(a) and \(b) is \(difference)");
+print("The product of \(a) and \(b) is \(product)");
+print("The quotient of \(a) divided by \(b) is \(quotient)");
+
+
+
+// User Input 
+print("Enter your name:");
+let name = readLine()
+
+print("Hello, \(name ?? "Unknown")!")
+
+
+// Simple If Statement 
+print("Enter your age:");
+let ageStr = readLine()
+
+if let age = Int(ageStr ?? "") {
+    if age >= 65 {
+        print("You are a senior.")
+    } else if age >= 20 {
+        print("You are an adult.")
+    } else if age >= 13 {
+        print("You are a teenager.")
+    } else {
+        print("You are not a teenager, adult, or senior.")
+    }
+} else {
+    print("Invalid age.")
+}
+
+
+
+// loop that prints the sum up the first N numbers
+print("Enter a number");
+var numStr = readLine();
+// var number = 10;
+
+if var number = Int(numStr ?? "") {
+    for i in 1...number {
+        number += i
+    } 
+    print("The sum of the first 10 numbers is \(number)");
+}
+
+
+
+// loop through the array and print each value
+var someNums:[Int] = [10, 20, 30]
+
+for item in someNums {
+   print(item)
+}
+
+
+// Define a function that takes parameters and returns a value, call the function and print the result
+func greeting(name: String) -> String {
+   return "Hello \(name)"; 
+}
+
+print(greeting(name: "David"));

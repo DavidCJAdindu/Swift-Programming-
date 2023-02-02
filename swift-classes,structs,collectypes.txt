@@ -1,0 +1,27 @@
+Here's a brief overview of Swift Classes and Structures:
+
+> Classes:
+
+- Classes are reference types and allow inheritance.
+- -A class can have properties, methods and initializers.
+- When an object of a class is created, it is stored in the heap.
+- Classes can have a destructor to free up memory when an object is no longer in use.
+- Classes can have reference cycles which can lead to memory leaks.
+
+
+> Structures:
+
+- Structures are value types and do not allow inheritance.
+- A structure can have properties, methods and initializers.
+- When a structure is assigned to a variable, its value is copied.
+- Structures cannot have a destructor to free up memory.
+- Structures are less prone to memory leaks due to the way they are stored in memory.
+
+
+> Collection Types:
+
+- Collection types are used to store collections of values.
+- Swift has 3 main collection types: Arrays, Dictionaries and Sets.
+- Arrays store values in order and allow duplicates.
+- Dictionaries store values with a key and do not allow duplicates.
+- Sets store values with no duplicates and no order.

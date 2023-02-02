@@ -1,0 +1,17 @@
+> Functions in Swift are self-contained blocks of code that perform a specific task. Here are some key concepts to understand when working with functions:
+
+1. Function Syntax: Functions in Swift have a specific syntax for declaring the function name, parameters and return type.
+
+2. Parameters: Functions can take input parameters, which are used to pass values into the function.
+
+3. Return Type: Functions can return a value, specified by the return type declared in the function header.
+
+4. Default Parameter Values: Functions can have default values for parameters, which can be used if no value is passed for that parameter when the function is called.
+
+5. External Parameter Names: Functions can have external parameter names, which are used when calling the function to make the purpose of each parameter clearer.
+
+6. Variadic Parameters: Functions can take a varying number of parameters, specified by adding three dots (...) after the parameter name.
+
+7. Function Types: Functions can be assigned to variables, making them first-class citizens in Swift.
+
+In terms of working with functions in libraries, it is important to understand how to read function signatures and how to use the provided documentation to determine the correct parameters and return types to use.

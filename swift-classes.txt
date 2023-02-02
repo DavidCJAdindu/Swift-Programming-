@@ -1,0 +1,55 @@
+Here are a few basic code examples of working with classes in Swift:
+
+1. Defining a class:
+
+class Shape {
+    var numberOfSides: Int
+
+    init(numberOfSides: Int) {
+        self.numberOfSides = numberOfSides
+    }
+}
+
+
+2. Creating an instance of a class:
+
+let triangle = Shape(numberOfSides: 3)
+print("A triangle has \(triangle.numberOfSides) sides.")
+
+
+3. Class Inheritance:
+
+class Square: Shape {
+    var sideLength: Double
+
+    init(sideLength: Double) {
+        self.sideLength = sideLength
+        super.init(numberOfSides: 4)
+    }
+}
+
+let square = Square(sideLength: 5.0)
+print("A square has \(square.numberOfSides) sides.")
+
+
+4. Overriding methods:
+
+class Circle: Shape {
+    var radius: Double
+
+    init(radius: Double) {
+        self.radius = radius
+        super.init(numberOfSides: 0)
+    }
+
+    override var numberOfSides: Int {
+        return 0
+    }
+}
+
+let circle = Circle(radius: 5.0)
+print("A circle has \(circle.numberOfSides) sides.")
+
+
+
+

@@ -1,0 +1,121 @@
+1. Create a custom class or structure that represents a person's name, age, and occupation. Initialize an instance of the class or structure and print its properties.
+
+
+class Person {
+   var name: String
+   var age: Int
+   var occupation: String
+   
+   init(name: String, age: Int, occupation: String) {
+      self.name = name;
+      self.age = age;
+      self.occupation = occupation;
+   }
+}
+
+let John = Person(name: "John", age: 24, occupation: "ios dev")
+print("Hello, my name is \(John.name). I am a \(John.occupation) and I am \(John.age) years old")
+
+
+2. Create a custom class or structure that represents a car. The car should have properties for make, model, year, and speed. Initialize an instance of the car and print its properties. Then, write methods to increase and decrease the speed of the car.
+
+class Car {
+
+   var make: String
+   var model: String
+   var year: Int
+   var speed: Int
+   
+   init(make: String, model: String, year: Int, speed: Int) {
+      self.make = make;
+      self.model = model;
+      self.speed = speed;
+      self.year = year;
+   }
+   
+   func increaseSpeed(incSpeed: Int) -> Int {
+        return speed + incSpeed ;
+    }
+    
+   func decreaseSpeed(decSpeed: Int) -> Int {
+        return speed + decSpeed ;
+    }
+   
+}
+
+let TeslaX = Car(make: "Tesla", model: "Model X",  year: 2022, speed: 155);
+print("I drive a \(TeslaX.make) \(TeslaX.model), \(TeslaX.year). It is able to go \(TeslaX.increaseSpeed(incSpeed: 20))mph at top speed!")
+
+
+
+3. Create a custom class or structure that represents a bank account. The account should have properties for the account number, balance, and owner's name. Initialize an instance of the account and print its properties. Then, write methods to deposit and withdraw money from the account.
+
+
+class BankAcc {
+
+   var name: String;
+   var accBal: Int;
+   var accNum: Int;
+   
+   init(name: String, accBal: Int, accNum: Int) {
+      self.name = name;
+      self.accBal = accBal;
+      self.accNum = accNum;
+   }
+   
+   func depositBal(incBal: Int) -> Int {
+        return accBal + incBal ;
+    }
+    
+   func withdrawBal(decBal: Int) -> Int {
+        return accBal + decBal ;
+    }
+   
+}
+
+let AIB102 = BankAcc(name: "David", accBal: 5,  accNum: 102);
+print("My name is \(AIB102.name). I currently have \(AIB102.depositBal(incBal: 600))€ in my AIB\(AIB102.accNum) current account")
+
+
+4. Create a custom class or structure that represents a book. The book should have properties for the title, author, publication year, and number of pages. Initialize an instance of the book and print its properties. Then, write a method that calculates the book's price based on its number of pages.
+
+class Book {
+
+   var title: String;
+   var author: String;
+   var publicationYear: Int;
+   var numberOfPages: Int;
+   
+   init(title: String, author: String, publicationYear: Int, numberOfPages: Int) {
+      self.title = title;
+      self.author = author;
+      self.publicationYear = publicationYear;
+      self.numberOfPages = numberOfPages;
+   }
+   
+   func bookPrice() -> Int{
+        return numberOfPages * 2;
+    }
+    
+ 
+   
+}
+
+let myBook = Book(title: "Think and Grow Rich", author: "Napoleon Hill",  publicationYear: 1937, numberOfPages: 238);
+print("My favourite book is \(myBook.title), by \(myBook.author). It was written in \(myBook.publicationYear) and has \(myBook.numberOfPages) pages! The book cuurently costs \(myBook.bookPrice())€")
+
+
+
+
+
+5. Create a class called Person with properties for first name, last name, and age. Add a method that returns the full name.
+
+6. Create a class called BankAccount with properties for account number, account balance, and owner name. Add methods to deposit, withdraw, and check balance.
+
+7. Create a class called Book with properties for title, author, and number of pages. Add methods to increase and decrease the number of pages.
+
+8. Create a class called Rectangle with properties for width and height. Add methods to calculate and return the area and perimeter.
+
+9. Create a class called Car with properties for make, model, year, and speed. Add methods to start, stop, and accelerate the car.
+
+

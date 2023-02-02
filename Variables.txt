@@ -1,0 +1,14 @@
+  
+  
+/* (:[type] - specifies the type of the variable, it is optional) */
+var variable_str: String = "This is a String";
+var variable_char: Character = "P";
+var variable_flo: Float = -2.678;
+var variable_doub: Double = 25.67;
+var variable_boolean: Bool = true;
+
+print("This is a String - \(variable_str)");
+print("This is a Character - \(variable_char)");
+print("This is a Float - \(variable_flo)");
+print("This is a Double - \(variable_doub)");
+print("This is a Boolean - \(variable_boolean)");

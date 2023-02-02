@@ -1,0 +1,133 @@
+** SWIFT CONSOLE PROGRAMS **
+
+1. A program that calculates the factorial of a given number.
+
+print("Enter a positive integer:")
+let string = readLine()
+if let number = Int(string ?? "") {
+    var factorial = 1
+    for i in 1...number {
+        factorial *= i
+    }
+    print("The factorial of \(number) is \(factorial)")
+} else {
+    print("Invalid input")
+}
+
+2. A program that generates the Fibonacci sequence of a given length.
+
+print("Enter the length of the Fibonacci sequence:")
+let string = readLine()
+
+if let length = Int(string ?? "") {
+    var fibonacci = [0, 1]
+    for _ in 2..<length {
+        let next = fibonacci[fibonacci.count - 1] + fibonacci[fibonacci.count - 2]
+        fibonacci.append(next)
+    }
+    print("The Fibonacci sequence of length \(length) is \(fibonacci)")
+} else {
+    print("Invalid input")
+}
+
+3. A program that calculates the average of a list of numbers input by the user.
+
+print("Enter 5 numbers:")
+var numbers = [Int]()
+
+for _ in 0...5 {
+    let string = readLine()
+    if let number = Int(string ?? "") {
+        numbers.append(number)
+    } 
+}
+
+let sum = numbers.reduce(0, +)
+let average = Double(sum) / Double(numbers.count)
+print("The average of the numbers you entered is \(average)")
+
+4. A program that converts temperatures between Celsius and Fahrenheit.
+
+print("Enter a temperature in Celsius:")
+let stringC = readLine()
+if let celsius = Double(stringC ?? "") {
+    let fahrenheit = (celsius * 9/5) + 32
+    print("\(celsius)°C is equal to \(fahrenheit)°F")
+} else {
+    print("Invalid input")
+}
+
+
+print("Enter a temperature in Fahrenheit:")
+let stringF = readLine()
+if let fahrenheit = Double(stringF ?? "") {
+    let celsius = (fahrenheit - 32) * 9/5
+    print("\(fahrenheit)°F is equal to \(celsius)°C")
+} else {
+    print("Invalid input")
+}
+
+5. A program that calculates the area and perimeter of a rectangle given its width and height.
+
+print("Enter the length of the rectangle:")
+let lengthString = readLine()
+print("Enter the width of the rectangle:")
+let widthString = readLine()
+if let length = Double(lengthString ?? ""), let width = Double(widthString ?? "") {
+    let area = length * width
+    let perimeter = 2 * (length + width)
+    print("The area of the rectangle is \(area)")
+    print("The perimeter of the rectangle is \(perimeter)")
+} else {
+    print("Invalid input")
+} 
+
+6. A program that calculates the hypotenuse of a right triangle given the lengths of its two sides.
+
+
+
+7. A program that checks if a given year is a leap year or not.
+
+print("Enter a year:")
+let yearString = readLine()
+
+// let year = 1940
+
+if let year = Int(yearString ?? "") {
+    let isLeapYear = (year % 4 == 0 && year % 100 != 0) || year % 400 == 0
+    if isLeapYear {
+        print("\(year) is a leap year.")
+    } else {
+        print("\(year) is not a leap year.")
+    }
+} else {
+print("Invalid input")
+}
+
+
+8. A program that converts a given number of seconds into hours, minutes, and seconds.
+
+
+
+9. A program that calculates the factorials of the first n positive integers.
+
+print("Enter the number of seconds:")
+let secondsString = readLine()
+if let seconds = Int(secondsString ?? "") {
+    let hours = seconds / 3600
+    let minutes = (seconds % 3600) / 60
+    let remainingSeconds = (seconds % 3600) % 60
+    print("\(seconds) seconds is equal to \(hours) hours, \(minutes) minutes, and \(remainingSeconds) seconds.")
+} else {
+    print("Invalid input")
+}
+
+10. A program that generates a multiplication table for the first 10 numbers.
+
+print("Multiplication Table:")
+for i in 1...10 {
+    for j in 1...10 {
+        print("\(i) x \(j) = \(i * j)\t", terminator: "")
+    }
+    print("")
+}

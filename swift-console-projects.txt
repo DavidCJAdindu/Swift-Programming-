@@ -1,0 +1,12 @@
+** SWIFT CONSOLE PROJECTS **
+
+1. A program that calculates the factorial of a given number.
+2. A program that generates the Fibonacci sequence of a given length.
+3. A program that calculates the average of a list of numbers input by the user.
+4. A program that converts temperatures between Celsius and Fahrenheit.
+5. A program that calculates the area and perimeter of a rectangle given its width and height.
+6. A program that calculates the hypotenuse of a right triangle given the lengths of its two sides.
+7. A program that checks if a given year is a leap year or not.
+8. A program that converts a given number of seconds into hours, minutes, and seconds.
+9. A program that calculates the factorials of the first n positive integers.
+10. A program that generates a multiplication table for the first 10 numbers.
