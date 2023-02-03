@@ -131,3 +131,17 @@ for i in 1...10 {
     }
     print("")
 }
+
+
+
+
+// easy input code 
+
+/*
+
+guard let input = readLine(), let accountIndex = Int(input) else {
+        print("Invalid input")
+        continue
+    }
+
+*/

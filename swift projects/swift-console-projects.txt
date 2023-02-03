@@ -1,0 +1,11 @@
+1. Command Line Calculator: Create a simple calculator that can perform basic arithmetic operations.
+
+2. To-Do List Manager: Create a to-do list manager that can add, update, and delete tasks from a list.
+
+3. Currency Converter: Create a currency converter that can convert between different currencies.
+
+4. Create a hangman game where the user has to guess a word by suggesting letters.
+
+5. Music Library: Create a music library that can store and manage information about songs and artists.
+
+6. Word Count: Create a program that counts the number of words in a given text file.

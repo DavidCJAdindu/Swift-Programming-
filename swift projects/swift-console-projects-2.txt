@@ -1,0 +1,151 @@
+->> Here are 5 console exercises in Swift that includes variables, loops, classes, functions, and arrays in a question format:
+
+> Exercise 1:
+
+
+1. Create a class called Person with the following properties:
+
+name (String)
+age (Int)
+address (String)
+
+2. Create a class method in the Person class called introduce that prints a message introducing the person, including their name, age, and address.
+
+3. Create a class called Student that inherits from the Person class. Add a property called studentId (String) to the Student class.
+
+4. Override the introduce method in the Student class to also print the student's ID.
+
+5. Create a class called Teacher that also inherits from the Person class. Add a property called subject (String) to the Teacher class.
+
+6. Override the introduce method in the Teacher class to also print the teacher's subject.
+
+7. Create an array of 5 Person objects.
+
+8. Use a loop to call the introduce method on each person in the array.
+
+9. Create a class method in the Person class called isTeenager that takes an age as a parameter and returns a boolean indicating whether the person is a teenager or not (a teenager is defined as someone between 13 and 19 years old).
+
+10. Use a loop to call the isTeenager method on each person in the array and print a message indicating whether each person is a teenager or not.
+
+
+
+
+> Exercise 2:
+
+
+1. Create a class called Car with the following properties:
+
+make (String)
+model (String)
+year (Int)
+speed (Double)
+
+2. Create a class method in the Car class called accelerate that increases the speed of the car by 10 mph.
+
+3. Create a class method in the Car class called decelerate that decreases the speed of the car by 10 mph.
+
+4. Create a class called RaceCar that inherits from the Car class. Add a property called isTurboOn (Boolean) to the RaceCar class.
+
+5. Override the accelerate method in the RaceCar class so that it increases the speed by 20 mph instead of 10 mph when the isTurboOn property is true.
+
+6. Create an array of 5 Car objects.
+
+7. Use a loop to call the accelerate method on each car in the array.
+
+8. Use a loop to call the decelerate method on each car in the array.
+
+9. Create a class method in the Car class called isSpeeding that takes a speed limit as a parameter and returns a boolean indicating whether the car is speeding (speeding is defined as going over the speed limit).
+
+10. Use a loop to call the isSpeeding method on each car in the array and print a message indicating whether each car is speeding or not.
+
+
+
+> Exercise 3:
+
+
+1. Create a class called Animal with the following properties:
+
+name (String)
+age (Int)
+isAlive (Boolean)
+
+2. Create a class method in the Animal class called makeSound that prints a message indicating the sound the animal makes.
+
+3. Create a class called Dog that inherits from the Animal class. Add a property called breed (String) to the Dog class.
+
+4. Override the makeSound method in the Dog class to print the message "Bark!"
+
+5. Create a class called Cat that also inherits from the Animal class. Add a property called color (String) to the Cat class.
+
+6. Override the makeSound method in the Cat class to print the message "Meow!"
+
+7. Create an array of 5 Animal objects.
+
+8. Use a loop to call the makeSound method on each animal in the array.
+
+9. Create a class method in the Animal class called isOld that takes an age as a parameter and returns a boolean indicating whether the animal is old or not (an animal is considered old if it is over 10 years old).
+
+10. Use a loop to call the isOld method on each animal in the array and print a message indicating whether each animal is old or not.
+
+
+Exercise 4:
+
+
+1. Create a class called Person with the following properties:
+
+firstName (String)
+lastName (String)
+age (Int)
+isStudent (Boolean)
+
+2. Create a class method in the Person class called fullName that returns the person's full name as a string.
+
+3. Create a class called Student that inherits from the Person class. Add a property called studentID (Int) to the Student class.
+
+4. Override the fullName method in the Student class to include the student's ID number in the full name.
+
+5. Create a class called Teacher that also inherits from the Person class. Add a property called subject (String) to the Teacher class.
+
+6. Override the fullName method in the Teacher class to include the teacher's subject in the full name.
+
+7. Create an array of 10 Person objects.
+
+8. Use a loop to call the fullName method on each person in the array.
+
+9. Create a class method in the Person class called isEligibleToVote that returns a boolean indicating whether the person is eligible to vote or not (a person is eligible to vote if they are over 18 years old).
+
+10. Use a loop to call the isEligibleToVote method on each person in the array and print a message indicating whether each person is eligible to vote or not.
+
+
+
+Exercise 5:
+
+
+1. Create a class called Shape with the following properties:
+
+name (String)
+sides (Int)
+
+2. Create a class method in the Shape class called perimeter that returns the perimeter of the shape. (Note: the perimeter of a shape with n sides can be calculated as n * sideLength, where sideLength is a constant value for all sides of the shape)
+
+3. Create a class called Rectangle that inherits from the Shape class. Add a property called width (Double) and height (Double) to the Rectangle class.
+
+4. Override the perimeter method in the Rectangle class to return the perimeter of a rectangle (2 * (width + height))
+
+5. Create a class called Triangle that also inherits from the Shape class. Add a property called base (Double) and height (Double) to the Triangle class.
+
+6. Override the perimeter method in the Triangle class to return the perimeter of a triangle (base + height + hypotenuse)
+
+7. Create an array of 5 Shape objects.
+
+8. Use a loop to call the perimeter method on each shape in the array.
+
+9. Create a class method in the Shape class called isRegular that returns a boolean indicating whether the shape is regular or not (a shape is regular if all sides are equal in length).
+
+10. Use a loop to call the isRegular method on each shape in the array and print a message indicating whether each shape is
+
+
+
+
+
+

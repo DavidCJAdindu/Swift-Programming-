@@ -1,0 +1,98 @@
+// This is a simple Bank Console Program 
+
+class Bank {
+    var accountHolders: [String] = []
+
+    func addAccountHolder(accountHolder: String) {
+        accountHolders.append(accountHolder)
+    }
+
+    func displayAccountHolders() {
+        print("Account Holders:")
+        for (index, accountHolder) in accountHolders.enumerated() {
+            print("\(index + 1). \(accountHolder)")
+        }
+    }
+}
+
+class Account {
+    var name: String
+    var balance: Double
+
+    init(name: String, balance: Double) {
+        self.name = name
+        self.balance = balance
+    }
+
+    func deposit(amount: Double) {
+        balance += amount
+        print("\(amount) has been deposited to \(name)'s account")
+    }
+
+    func withdraw(amount: Double) {
+        if amount > balance {
+            print("Insufficient balance in \(name)'s account")
+        } else {
+            balance -= amount
+            print("\(amount) has been withdrawn from \(name)'s account")
+        }
+    }
+}
+
+let bank = Bank()
+bank.accountHolders = ["John Doe", "Jane Doe", "Jim Brown"]
+
+var accounts: [Account] = []
+for accountHolder in bank.accountHolders {
+    accounts.append(Account(name: accountHolder, balance: 1000.0))
+}
+
+while true {
+    bank.displayAccountHolders()
+
+    print("Select an account holder (1, 2, 3, ...): ", terminator: "")
+    guard let input = readLine(), let accountIndex = Int(input) else {
+        print("Invalid input")
+        continue
+    }
+
+    guard accountIndex >= 1 && accountIndex <= accounts.count else {
+        print("Invalid selection")
+        continue
+    }
+
+    let account = accounts[accountIndex - 1]
+
+    print("1. Deposit")
+    print("2. Withdraw")
+    print("3. Display balance")
+    print("4. Exit")
+    print("Enter your choice (1, 2, 3, 4): ", terminator: "")
+    guard let choiceInput = readLine(), let choice = Int(choiceInput) else {
+        print("Invalid input")
+        continue
+    }
+
+    switch choice {
+    case 1:
+        print("Enter amount to deposit: ", terminator: "")
+        guard let depositInput = readLine(), let depositAmount = Double(depositInput) else {
+            print("Invalid input")
+            continue
+        }
+        account.deposit(amount: depositAmount)
+    case 2:
+        print("Enter amount to withdraw: ", terminator: "")
+        guard let withdrawInput = readLine(), let withdrawAmount = Double(withdrawInput) else {
+            print("Invalid input")
+            continue
+        }
+        account.withdraw(amount: withdrawAmount)
+    case 3:
+        print("\(account.name)'s balance: \(account.balance)")
+    case 4:
+        exit(0)
+    default:
+        print("Invalid choice")
+    }
+}
